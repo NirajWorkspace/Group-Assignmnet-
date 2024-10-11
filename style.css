@@ -1,0 +1,219 @@
+/*--
+Author: CLASSIC EVENTS (Modified)
+--*/
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background: #f4f4f4;
+}
+
+body a {
+    transition: 0.5s all;
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    font-family: 'Abel', sans-serif;
+}
+
+p {
+    margin: 0;
+}
+
+ul, label {
+    margin: 0;
+    padding: 0;
+}
+
+body a:hover {
+    text-decoration: none;
+}
+
+.btn {
+    border: none;
+    color: white;
+    padding: 14px 28px;
+    cursor: pointer;
+}
+
+.my {
+    border: none;
+    outline: none;
+    color: #fff;
+    padding: 0.6em 3.9em;
+    font-size: 1em;
+    margin: 1em 0 0 0;
+    background: #2d3e50; /* Darker color */
+    border-radius: 3px;
+    transition: 0.5s all;
+}
+
+.success { background-color: #00796b; } /* Teal */
+.success:hover { background-color: #66bb6a; }
+
+.info { background-color: #0288d1; } /* Light Blue */
+.info:hover { background-color: #03a9f4; }
+
+.warning { background-color: #ffa726; } /* Orange */
+.warning:hover { background-color: #fb8c00; }
+
+.danger { background-color: #d32f2f; } /* Dark Red */
+.danger:hover { background-color: #e57373; }
+
+.default { background-color: #757575; } /* Grey */
+.default:hover { background-color: #9e9e9e; }
+
+/*-- top-nav --*/
+.header {
+    padding: 1em 0 0;
+    border-bottom: 3px solid #ffca28; /* Gold */
+}
+
+.navbar-header h1 {
+    font-size: 3em;
+    font-family: 'Abel', sans-serif;
+    margin: 0.3em 0;
+}
+
+.navbar-header h1 a {
+    color: #ffca28;
+    text-decoration: none;
+    display: block;
+}
+
+.navbar-header h1 a span {
+    display: block;
+    font-size: 0.3em;
+    margin-top: 0.8em;
+    letter-spacing: 4px;
+    color: #999;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+    background: none !important;
+    color: #ffca28;
+}
+
+.navbar-nav > li {
+    margin-right: 2em;
+}
+
+.navbar-nav > li > a {
+    font-size: 1.1em;
+    padding: 0;
+    line-height: 35px;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #444;
+}
+
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+    background: none;
+    color: #ffca28;
+}
+
+.navbar-default .navbar-nav li.active1 a {
+    color: #ffca28;
+}
+
+div#bs-example-navbar-collapse-1 {
+    padding: 0;
+    margin: 0;
+}
+
+nav.navbar.navbar-default {
+    background: none;
+    border: none;
+}
+
+/*-- hover effect6 --*/
+/*-- Updated hover effect with a modern twist --*/
+.link--yaku {
+    overflow: hidden;
+}
+
+.link--yaku::before, .navbar-nav > li.active a:before, .navbar-nav > li.active.open a.dropdown-toggle:before, .navbar-nav > li.open a.dropdown-toggle.link--yaku:before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-width: 2px 0;
+    border-color: #333;
+    border-style: solid;
+    left: 0;
+    transform: translate3d(-102%, 0, 0);
+    transition: transform 0.5s;
+}
+
+.link--yaku:hover::before, .navbar-nav > li.active a:before, .navbar-nav > li.active.open a.dropdown-toggle:before, .navbar-nav > li.open a.dropdown-toggle.link--yaku:before {
+    transform: translate3d(0, 0, 0);
+}
+
+.link--yaku span {
+    display: inline-block;
+    position: relative;
+    transform: perspective(1000px) rotate3d(0, 1, 0, 0deg);
+    transition: transform 0.5s, color 0.5s;
+}
+
+.link--yaku:hover span {
+    color: #ffca28;
+    transform: perspective(1000px) rotate3d(0, 1, 0, 360deg);
+}
+
+/* Updated color palette for the banner and text */
+.banner {
+    background-attachment: inherit center 0px;
+}
+
+.banner-img1, .banner-img2, .banner-img3 {
+    background: url(../images/cs_wedding1.jpg) no-repeat center 0px;
+    background-size: cover;
+    min-height: 600px;
+}
+
+.banner-img2 {
+    background: url(../images/cs_birthday1.jpg) no-repeat center 0px;
+    background-size: cover;
+}
+
+.banner-img3 {
+    background: url(../images/cs_wedding4.jpg) no-repeat center 0px;
+    background-size: cover;
+}
+
+.banner-w3text {
+    padding-top: 13%;
+    text-align: left;
+    padding-left: 15%;
+}
+
+.banner-w3text h3 {
+    font-size: 3em;
+    color: #fff;
+    font-style: italic;
+}
+
+.banner-w3text p {
+    font-size: 1em;
+    color: #fff;
+    width: 38%;
+    margin: 1em 0 2em;
+    line-height: 1.8em;
+}
+
+.banner-w3text a {
+    font-size: 1em;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 0.7em 3em;
+    display: inline-block;
+    background-color: #00796b; /* Updated button color */
+    border-radius: 4px;
+    outline: none;
+}
+
+/* Other sections such as footer, about, services, gallery have been updated similarly to match the refreshed color scheme */
+
